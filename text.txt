@@ -1,0 +1,19 @@
+step 1: extraLarge array trail, on the insert function is nearly 40 times as length to run as the append function (1.983375ms and 774.939 ms)
+results for append
+tinyAppend 5.667 μs
+smallAppend 4.625 μs
+medAppend 28.791 μs
+largeAppend 110.458 μs
+xLargeAppend 1.423708 ms
+
+results for insert
+tinyInsert 3.041 μs
+smallInsert 7.375 μs
+mediumInsert 103.375 μs
+largeInsert 6.158417 ms
+xlargeInsert 771.234125 ms
+
+
+the append function starts off with less run time until it reaches the small array.
+the unshift button while it has similar results has to rename the index in said array each time, which is going to be significantly longer depending on the length of the array (n)
+so its run time grows expotentially longer along with the array.
